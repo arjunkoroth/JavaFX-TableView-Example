@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111" fx:controller="tableview.TViewExampleController">
+   <children>
+      <TableView fx:id="dataTable" layoutX="14.0" layoutY="14.0" prefHeight="292.0" prefWidth="570.0">
+        <columns>
+          <TableColumn fx:id="nameColumn" prefWidth="272.0" text="Name" />
+          <TableColumn fx:id="phoneColumn" minWidth="5.0" prefWidth="297.0" text="Phone" />
+        </columns>
+      </TableView>
+      <TextField fx:id="tName" layoutX="14.0" layoutY="316.0" promptText="Name" />
+      <TextField fx:id="tPhone" layoutX="171.0" layoutY="316.0" promptText="Phone" />
+      <Button layoutX="332.0" layoutY="316.0" mnemonicParsing="false" onAction="#addData" prefHeight="25.0" prefWidth="50.0" text="Add" />
+      <Button layoutX="394.0" layoutY="316.0" mnemonicParsing="false" onAction="#removeData" text="Remove" />
+      <Button layoutX="464.0" layoutY="316.0" mnemonicParsing="false" onAction="#readData" prefHeight="25.0" prefWidth="50.0" text="Read" />
+   </children>
+</AnchorPane>
